@@ -2,10 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*.logo{
-    margin-right: auto;
-    justify-content: start;
-}*/
 nav {
   background-color: white;
   color: #0072bc;
@@ -42,6 +38,16 @@ nav #right {
   border-style: dashed;
   border-color: rgb(13, 228, 27);
 }
+nav #nav-bottom {
+  text-align: start;
+  font-size: larger;
+  background-color: #0072bc;
+  color: white;
+  border: 1px solid #2196f3;
+}
+nav #nav-bottom div {
+  margin: 1rem;
+}
 nav .logo {
   margin-right: auto;
 }
@@ -61,16 +67,6 @@ nav p {
 nav .ico_nav {
   width: 10%;
   height: 10%;
-}
-
-#nav-bottom {
-  text-align: start;
-  font-size: larger;
-  background-color: #0072bc;
-  color: white;
-}
-#nav-bottom div {
-  margin: 1rem;
 }
 
 .dropdown {
@@ -93,4 +89,195 @@ nav .ico_nav {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
+}
+
+.main-page-1 {
+  background-color: #0072bc;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.main-page-1 p span {
+  color: yellow;
+}
+
+.main-page-1 > div {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+}
+
+.main-page-1 > div > img {
+  width: 100%;
+}
+
+.main-page-1 > div > button {
+  border-radius: 5px;
+  padding: 15px 60px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.main-page-2 {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.main-page-2 > div > div {
+  display: inline-flex;
+}
+
+.main-page-2 > div > div > div {
+  width: 30%;
+  font-size: 20px;
+  padding: 1rem 1rem;
+}
+
+.main-page-2 > div > div > div > button {
+  color: #060000;
+  border-radius: 5px;
+  padding: 10px 85px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.main-page-3 {
+  background-color: #0072bc;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-page-3 > div {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-page-3 > div > button {
+  border-radius: 5px;
+}
+
+.main-page-5 {
+  background-color: #55aee9;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-page-5 > div {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-page-5 > div > button {
+  color: #ffffff;
+  border-radius: 5px;
+  border-color: #ffffff;
+  background-color: #55aee9;
+}
+
+.main-page-6 > div {
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
+}
+.main-page-6 > div p span {
+  color: blue;
+}
+
+.main-page-6 > div > div > div {
+  width: 700px;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+
+.main-page-6 > div > div > div > img {
+  width: 100%;
+}
+
+.main-page-6 > div > div > div > div {
+  width: 45%;
+  display: inline-block;
+}
+
+.main-page-6 > div > div > div > div > img {
+  width: 65%;
+}
+
+.main-page-6 > div > div > div > button {
+  color: #060000;
+  border-radius: 5px;
+  padding: 10px 65px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+.main-page-7 {
+  background-color: #2f333a;
+  padding: 2rem 2rem;
+  color: #ffffff;
+}
+.main-page-7 p span {
+  color: yellow;
+}
+
+.main-page-7 > div > div {
+  display: inline-flex;
+  text-align: left;
+  font-size: 20px;
+  width: 100%;
+}
+
+.main-page-7 > div > div > div {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+.main-page-7 > div > div > div > img {
+  width: 920px;
+}
+
+.main-page-7 > div > div > div > button {
+  padding: 15px 95px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: yellow;
+}
+
+.main-page-8 {
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: #000000;
+}
+.main-page-8 p span {
+  font-weight: bold;
+}
+
+.main-page-8 > div > img {
+  width: 100%;
+}
+
+.main-page-8 > div {
+  width: 40%;
+  display: inline-block;
+  text-align: left;
+  font-size: 20px;
+  padding: 2rem 2rem;
+}
+
+.main-page-8 > div > button {
+  border-radius: 5px;
+  padding: 12px 55px;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgb(20, 96, 195);
 }/*# sourceMappingURL=style.css.map */
