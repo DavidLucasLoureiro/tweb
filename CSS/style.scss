@@ -157,18 +157,18 @@ nav {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições suaves a mudanças de cor e texto */
+    transition: background-color 0.3s ease, color 0.3s ease;
 
 }
 
 .yellow-button:hover {
     background-color: #f8f675;
-    color: black; /* Altera a cor de fundo e a cor do texto quando o mouse passa por cima */
+    color: black;
 }
 
 .blue-button:hover {
     background-color: #218fd8;
-    color: white; /* Altera a cor de fundo e a cor do texto quando o mouse passa por cima */
+    color: white;
 }
 
 .main-page-2{
@@ -190,13 +190,21 @@ nav {
 }
 
 
-.main-page-2 > div > div > div > button{
+
+.white-button{
     color: #060000;
     border-radius: 5px;
     padding: 10px 85px;
     font-size: 15px;
     font-weight: bold;
     background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.white-button:hover {
+    background-color: #e6e4e4;
+    color: #060000;
 }
 
 
@@ -287,12 +295,7 @@ nav {
 }
 
 .main-page-6 > div > div > div > button{
-    color: #060000;
-    border-radius: 5px;
-    padding: 10px 65px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #ffffff;
+    transform: translate( 50%, 0%);
 }
 
 .main-page-7{
@@ -323,10 +326,6 @@ nav {
 
 .main-page-7 > div > div > div > button{
     padding: 15px 95px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: yellow;
 
 }
 
@@ -354,12 +353,8 @@ nav {
 }
 
 .main-page-8 > div > button{
-    border-radius: 5px;
-    padding: 12px 55px;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: bold;
-    background-color: rgb(20, 96, 195);       
+    font-size: 20px;  
+          
 }
 
 .main-page-9 > div{
@@ -386,3 +381,37 @@ nav {
 }
   
   
+@media screen and (max-width: 768px) {
+    .main-page-1 {
+        padding: 0rem;
+        width: 100%;
+        
+        
+    }
+
+    .main-page-1 > div {
+        width: 90%; 
+        text-align: center;
+        font-size: 20px;
+        transform: translate(0%, 0%);
+        p span{
+            font-size: 20px;
+            transform: translate( 0%, 0%);
+        }
+        h2{
+            font-size: 25px;
+            
+            width: 100%;
+        }
+        .legenda{
+            
+            font-size: 15px;
+            transform: translate( 0%, 0%);
+        }
+    }
+
+    .main-page-1 > div > img {
+        width: 100%; /* Ocupa toda a largura em telas médias */
+        transform: translate(0, 0);
+    }
+}
