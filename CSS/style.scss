@@ -411,7 +411,25 @@ nav {
     }
 
     .main-page-1 > div > img {
-        width: 100%; /* Ocupa toda a largura em telas médias */
+        width: 100%; 
         transform: translate(0, 0);
     }
+
+    .main-page-2{
+        width: 90%; 
+        font-size: 15px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .main-page-2 > div > div{
+        display: inline-block;
+        
+    }
+    
+    .main-page-2 > div > div > div{
+        width: 100%;   
+        padding: 0rem 0rem;
+        
+    }
+    
 }
