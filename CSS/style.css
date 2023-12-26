@@ -280,4 +280,24 @@ nav .ico_nav {
   color: #ffffff;
   font-weight: bold;
   background-color: rgb(20, 96, 195);
+}
+
+.main-page-9 > div {
+  display: inline-flex;
+  text-align: left;
+  font-size: 20px;
+  padding: 2rem 2rem;
+}
+
+.main-page-9 > div > div {
+  width: 30%;
+  padding: 20px;
+}
+.main-page-9 > div > div P span {
+  color: #0072bc;
+  font-weight: bold;
+}
+
+.main-page-9 > div > div > img {
+  width: 450px;
 }/*# sourceMappingURL=style.css.map */
