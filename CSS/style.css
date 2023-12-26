@@ -149,10 +149,11 @@ nav .ico_nav {
   padding: 2rem 2rem;
   text-align: center;
   color: #ffffff;
+  font-size: 25px;
 }
 
 .main-page-3 > div {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   text-align: center;
 }
@@ -169,25 +170,29 @@ nav .ico_nav {
 }
 
 .main-page-5 > div {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   text-align: center;
+  font-size: 30px;
 }
 
 .main-page-5 > div > button {
+  padding: 10px 55px;
   color: #ffffff;
   border-radius: 5px;
   border-color: #ffffff;
   background-color: #55aee9;
+  font-size: 20px;
 }
 
 .main-page-6 > div {
   width: 100%;
   display: inline-flex;
   text-align: center;
+  font-size: 16px;
 }
 .main-page-6 > div p span {
-  color: blue;
+  color: #0072bc;
 }
 
 .main-page-6 > div > div > div {
