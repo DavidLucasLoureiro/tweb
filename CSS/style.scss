@@ -96,10 +96,9 @@ nav {
     background-color: #0072bc;
     padding: 2rem 2rem;
     text-align: center;
-    color: #ffffff;
-        p span{
-            color: yellow;
-        }
+    align-items: center;
+    
+       
 }
 
 .main-page-1 > div{
@@ -107,19 +106,69 @@ nav {
     display: inline-block;
     text-align: left;
     font-size: 20px;
-
+    transform: translate( -25%, -30%);
+    p span{
+        color: yellow;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 42px;
+        color: #ffffff;
+        width: 80%;
+    }
+    .legenda{
+        color: #ffffff;
+        font-size: 15px;
+        transform: translate( 40%, 0%);
+    }
 }
 
 .main-page-1 > div > img{
-    width: 100%;
+    width: 950px;
+    transform: translate( -10%, 30%);
 }
 
-.main-page-1 > div > button{
+
+.yellow-button {
+    background-color: yellow;
+    color: black; 
+    padding: 10px 20px; 
     border-radius: 5px;
-    padding: 15px 60px;
-    font-size: 15px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
     font-weight: bold;
-    background-color: yellow;       
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições suaves a mudanças de cor e texto */
+    
+}
+
+.blue-button {
+    background-color: #0072bc;
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    border-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições suaves a mudanças de cor e texto */
+
+}
+
+.yellow-button:hover {
+    background-color: #f8f675;
+    color: black; /* Altera a cor de fundo e a cor do texto quando o mouse passa por cima */
+}
+
+.blue-button:hover {
+    background-color: #218fd8;
+    color: white; /* Altera a cor de fundo e a cor do texto quando o mouse passa por cima */
 }
 
 .main-page-2{
