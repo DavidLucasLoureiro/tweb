@@ -14,6 +14,26 @@ nav {
     color:#0072bc;
 
     justify-content: space-around;
+    #nav-top{
+        display:flex;
+        width: 100%;
+        border-style:dashed;
+        border-color:rgb(255, 192, 253);
+        font-size: larger;
+    }
+    #left{
+        
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-style:dashed;
+        border-color:red;
+    }
+    #right{
+        display: flex;
+        border-style:dashed;
+        border-color:rgb(13, 228, 27);
+    }
     ul {
         list-style-type: none;
         display:flex;
@@ -25,26 +45,8 @@ nav {
         justify-content: space-around;
     }
     a{
+        display: flex;
         margin-left: 0.5rem;
-    }
-    #nav-top{
-        display:flex;
-        width: 100%;
-        border-style:dashed;
-        border-color:rgb(255, 192, 253);
-        font-size: larger;
-    }
-    #left{
-        justify-content: space-between;
-        display: flex;
-        width: 100%;
-        border-style:dashed;
-        border-color:red;
-    }
-    #right{
-        display: flex;
-        border-style:dashed;
-        border-color:rgb(13, 228, 27);
     }
     #nav-bottom{
         text-align: start;
@@ -148,7 +150,7 @@ nav {
     display: inline-block;
     text-align: left;
     font-size: 20px;
-
+    
 }
 
 .main-page-1 > div > img{
@@ -160,7 +162,21 @@ nav {
     padding: 15px 60px;
     font-size: 15px;
     font-weight: bold;
-    background-color: yellow;       
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.yellow-button:hover {
+    background-color: #f8f675;
+    color: black;
+}
+
+.blue-button:hover {
+    background-color: #218fd8;
+    color: white;
 }
 
 .main-page-2{
@@ -182,13 +198,21 @@ nav {
 }
 
 
-.main-page-2 > div > div > div > button{
+
+.white-button{
     color: #060000;
     border-radius: 5px;
     padding: 10px 85px;
     font-size: 15px;
     font-weight: bold;
     background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.white-button:hover {
+    background-color: #e6e4e4;
+    color: #060000;
 }
 
 
@@ -197,14 +221,16 @@ nav {
     padding: 2rem 2rem;
     text-align: center;
     color: #ffffff;
+    font-size: 25px;
 
 
 }
 
 .main-page-3 > div{
-    width: 50%;
+    width: 100%;
     display: inline-block;
     text-align: center;
+    
     
 
 }
@@ -224,26 +250,30 @@ nav {
 }
 
 .main-page-5 > div{
-    width: 50%;
+    width: 100%;
     display: inline-block;
     text-align: center;
+    font-size: 30px;
     
 
 }
 
 .main-page-5 > div > button{
+    padding: 10px 55px;
     color: #ffffff;
     border-radius: 5px;
     border-color: #ffffff;
     background-color: #55aee9;
+    font-size: 20px;
 }
 
 .main-page-6 > div{
     width: 100%;
     display:inline-flex;
     text-align: center;
+    font-size: 16px; 
     p span{
-        color: blue;
+        color: #0072bc;
     }
    
 }
@@ -264,6 +294,7 @@ nav {
     display: inline-block;
     
     
+    
 }
 
 .main-page-6 > div > div > div > div > img{
@@ -272,12 +303,7 @@ nav {
 }
 
 .main-page-6 > div > div > div > button{
-    color: #060000;
-    border-radius: 5px;
-    padding: 10px 65px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #ffffff;
+    transform: translate( 50%, 0%);
 }
 
 .main-page-7{
@@ -308,10 +334,6 @@ nav {
 
 .main-page-7 > div > div > div > button{
     padding: 15px 95px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: yellow;
 
 }
 
@@ -339,13 +361,126 @@ nav {
 }
 
 .main-page-8 > div > button{
-    border-radius: 5px;
-    padding: 12px 55px;
-    font-size: 15px;
-    color: #ffffff;
-    font-weight: bold;
-    background-color: rgb(20, 96, 195);       
+    font-size: 20px;  
+          
 }
 
+.main-page-9 > div{
+    
+    display:inline-flex;
+    text-align: left;
+    font-size: 20px;
+    padding: 2rem 2rem;
+
+}
+
+.main-page-9 > div > div{
+    width: 30%;
+    padding: 20px;
+    P span{
+        color: #0072bc;
+        font-weight: bold
+    }
+}
+  
+.main-page-9 > div > div > img{
+    width: 450px;
+    
+}
   
   
+@media screen and (max-width: 768px) {
+    .main-page-1 {
+        padding: 0rem;
+        width: 100%;
+        
+        
+    }
+
+    .main-page-1 > div {
+        width: 90%; 
+        text-align: center;
+        font-size: 20px;
+        transform: translate(0%, 0%);
+        p span{
+            font-size: 20px;
+            transform: translate( 0%, 0%);
+        }
+        h2{
+            font-size: 25px;
+            
+            width: 100%;
+        }
+        .legenda{
+            
+            font-size: 15px;
+            transform: translate( 0%, 0%);
+        }
+    }
+
+    .main-page-1 > div > img {
+        width: 100%; 
+        transform: translate(0, 0);
+    }
+
+    .main-page-2{
+        width: 90%; 
+        font-size: 15px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .main-page-2 > div > div{
+        display: inline-block;
+        
+    }
+    
+    .main-page-2 > div > div > div{
+        width: 100%;   
+        padding: 0rem 0rem;
+        
+    }
+    .main-page-6{
+        width: 90%;   
+        
+        
+    }
+    .main-page-6 > div{
+        display: grid;
+    grid-template-rows: auto auto; /* Duas linhas, uma para cada div */
+    }
+    
+    .main-page-6 > div > div > div{
+        width: 100%;
+        text-align: left;
+        padding: 1rem 1rem;
+        flex-direction: column-reverse;
+        
+        
+        
+    }
+
+    .main-page-6 > div > div > div > img{ 
+        width: 100%;
+        display: block;
+    }
+    
+    .main-page-6 > div > div > div > div {
+        width: 100%;
+        font-size: 12px;
+        
+        
+  
+    }
+
+    .main-page-6 > div > div > div > div > img {
+        display: none;
+        
+        
+    }
+        
+    .main-page-6 > div > div > div > button{
+        
+        transform: translate(0%, 0%);
+    }
+      
+}
