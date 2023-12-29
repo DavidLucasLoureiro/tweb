@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: none;
   border: 0;
@@ -5,36 +6,37 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", "Arial", sans-serif;
+}
+body input {
+  border: 1px solid black;
 }
 
 nav {
   background-color: white;
   color: #0072bc;
-  justify-content: space-around;
 }
 nav #nav-top {
   display: flex;
   width: 100%;
-  border-style: dashed;
-  border-color: rgb(255, 192, 253);
+  border: 5px dashed pink;
   font-size: larger;
 }
 nav #left {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-style: dashed;
-  border-color: red;
+  border: 5px dashed red;
 }
 nav #right {
   display: flex;
-  border-style: dashed;
-  border-color: rgb(13, 228, 27);
+  border: 5px dashed green;
 }
 nav ul {
   list-style-type: none;
   display: flex;
+  margin-left: auto;
+  justify-content: space-around;
   width: 100%;
   border-style: dashed;
   align-items: center;
@@ -79,6 +81,10 @@ nav .ico_nav-img {
 }
 nav .ico_nav {
   margin-left: auto;
+}
+nav #search {
+  width: 26px;
+  height: 26px;
 }
 nav .nav-left-buttons {
   border: none;
@@ -132,16 +138,51 @@ nav #help {
   display: inline-block;
   text-align: left;
   font-size: 20px;
+  transform: translate(-25%, -30%);
+}
+.main-page-1 > div p span {
+  color: yellow;
+  font-weight: bold;
+}
+.main-page-1 > div h2 {
+  font-size: 42px;
+  color: #ffffff;
+  width: 80%;
+}
+.main-page-1 > div .legenda {
+  color: #ffffff;
+  font-size: 15px;
+  transform: translate(40%, 0%);
 }
 
 .main-page-1 > div > img {
-  width: 100%;
+  width: 950px;
+  transform: translate(-10%, 30%);
 }
 
-.main-page-1 > div > button {
+.yellow-button {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
   border-radius: 5px;
-  padding: 15px 60px;
-  font-size: 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições suaves a mudanças de cor e texto */
+}
+
+.blue-button {
+  background-color: #0072bc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
   font-weight: bold;
   font-size: 20px;
   margin: 4px 2px;
@@ -190,22 +231,31 @@ nav #help {
   color: #060000;
 }
 
-.main-page-3 {
-  background-color: #0072bc;
+.main-page-4 {
+  background-color: #f2f1f1;
   padding: 2rem 2rem;
-  text-align: center;
-  color: #ffffff;
-  font-size: 25px;
+  text-align: left;
+  font-size: 20px;
+  height: 800px;
 }
 
-.main-page-3 > div {
+.main-page-4 > div {
+  display: inline-flex;
   width: 100%;
-  display: inline-block;
-  text-align: center;
+  align-items: center;
 }
 
-.main-page-3 > div > button {
-  border-radius: 5px;
+.main-page-4 > div > div {
+  width: 50%;
+}
+
+.main-page-4 > div > div > img {
+  height: 600px;
+  padding: 2rem 2rem;
+}
+
+.main-page-4 > div > button {
+  transform: translate(50%, 0%);
 }
 
 .main-page-5 {
@@ -337,6 +387,56 @@ nav #help {
 
 .main-page-9 > div > div > img {
   width: 450px;
+}
+
+.main-page-10 {
+  background-color: #2f333a;
+  padding: 2rem 2rem;
+}
+
+.main-page-10 > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.main-page-10 > div > div {
+  text-align: left;
+  font-size: 20px;
+}
+
+.main-page-10 > div > div > h2 {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > p {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > a {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > button {
+  color: #ffffff;
+  background-color: #2f333a;
+  border-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 45px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-page-10 > div > div > div > img {
+  width: 30px;
+  align-items: center;
+  padding: 2% 2%;
+}
+
+.main-page-10 > div > div > img {
+  width: 250px;
 }
 
 @media screen and (max-width: 768px) {

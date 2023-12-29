@@ -6,55 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>UNHCR</title>
 </head>
 
 <body>
+    <header>
+        <section class="top-banner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" />
+                </a>
+            </div>
+            <div class="links">
+                <!--search and web icon-->
+                <a class="ico_nav">
+                    <img class="ico_nav-img" id="search" src="img/search.svg" />
+                </a>
+                <a class="ico_nav">
+                    <img class="ico_nav-img" id="web" src="img/web.svg" />
+                </a>
+                <!--buttons-->
+                <button id="donate" class="nav-left-buttons" onClick="redirectDonate()">
+                    <p>Donate</p>
+                </button>
+                <button id="help" class="nav-left-buttons" onClick="redirectHelp()">
+                    <p>Get Help</p>
+                </button>
+            </div>
+        </section>
+        <nav>
+
+        </nav>
+    </header>
     <nav>
-        <div id="nav-top">
-            <div id="left">
-                <a class="logo" href="index.html"><img src="img/logo.svg" /></a>
-                <ul>
-                    <li>
-                        <a class="ico_nav"><img class="ico_nav-img" id="search" src="img/search.svg" /></a>
-                    </li>
-                    <li>
-                        <a class="ico_nav"><img class="ico_nav-img" id="web" src="img/web.svg" /></a>
-                    </li>
-                </ul>
-            </div>
-            <div id="right">
-                <ul>
-                    
-                    <li>
-                        <button id="donate" class="nav-left-buttons">DONATE</button>
-                    </li>
-                    <li>
-                        <button id="help" class="nav-left-buttons">GET HELP</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        </div>
-
         <div id="nav-bottom">
             <div class="dropdown">
-                <span>ABOUT UNHCR</span>
+                <span>ABOUT UNHCR <i class="fa fa-caret-down"></i></span>
                 <div class="dropdown-content">
                     <p>Hello World!</p>
                     <p>Boas Pessoal sou SirKazzio</p>
                 </div>
             </div>
             <div class="dropdown">
-                <span>What we do</span>
+                <span>What we do <i class="fa fa-caret-down"></i></span>
                 <div class="dropdown-content">
                     <p>Hello World!</p>
                     <p>Boas Pessoal sou SirKazzio</p>
                 </div>
             </div>
             <div class="dropdown">
-                <span>Emergencies</span>
+                <span>Emergencies <i class="fa fa-caret-down"></i></span>
                 <div class="dropdown-content">
                     <p>Hello World!</p>
                     <p>Boas Pessoal sou SirKazzio</p>
@@ -95,8 +99,7 @@
         </div>
         <div class="main-page-2">
             <div>
-                    <h1>UNHCR helps to save lives and build better futures for the millions of people forced to flee their homes.</h1>
-                    
+                <br><h1>UNHCR helps to save lives and build better futures for the millions of people forced to flee their homes.</h1>    
                 <div>
                     <div>
                         <p>UNHCR, the UN Refugee Agency works to ensure that everybody has the right to seek asylum and find safe refuge, having fled violence, persecution or war at home.</p>
@@ -117,22 +120,22 @@
             
         </div>
         <div class="main-page-3">
-            <h3>Global Refugee Forum 2023</h3>
-            <div>
-                <p>The Global Refugee Forum 2023 will take place from 13 to 15 December at the Palexpo in Geneva, Switzerland, 
-                with linked events from 11 December onwards. Held every four years, the Forum is an opportunity for the international
-                community to come together to find solutions, amplify impact and commit to sustained actions and support for refugees 
-                and their host countries.</p>
-            </div>
-            <div>
-                <button>Learn more about the Global Refugee Forum</button>
-            </div>
+            
         </div>
-        <div class="main-page-4"> <!--graficos-->
-            <div>Key facts and figures</div>
-            <div></div>
-            <div>Latest from Twitter</div>
-            <div><button>Get the latest data and statistics</button></div>
+        <div class="main-page-4">
+            <h2>Key facts and figures</h2>
+            <div>
+                <div>
+                    <img src="img/grafico1.PNG" >
+                </div>
+                <div>
+                    <img src="img/grafico2.PNG" >
+                </div>
+            </div>
+            
+            <div>
+                <button class="white-button">Get the latest data and statistics</button>
+            </div>
         </div>
         <div class="main-page-5">
             <div>
@@ -258,6 +261,46 @@
                     <p><span>Shop refugee-crafted products at MADE51 </span></p>
                     <p>Browse the MADE51 shop for beautiful hand-made pieces produced by refugees.</p>
                 </div>
+            </div>
+        </div>
+        <div class="main-page-10">
+            <div>
+                <div>
+                    <h2>Support our work </h2>
+                    <p>Please help refugees in need.</p>
+                    <button >Donate now</button>
+                </div>
+                <div>
+                    <h2>Stay connected</h2>
+                    <p> Follow us on</p>
+                    <div>
+                        <img src="img/x.svg" href="">
+                        <img src="img/facebook.svg" href="">
+                        <img src="img/instagram.svg" href="">
+                        <img src="img/youtube.svg" href="">
+                        <img src="img/tiktok.svg" href="">
+                        <img src="img/linked.svg" href="">
+                   </div>
+                </div>
+                <div>
+                    <h2>Stay informed</h2>
+                    <p>Sign up to our newsletter to learn more about people forced to flee and how you can support them. </p>
+                    <button >Subscribe</button>
+                </div>
+                <div>
+                    <h2>Contact us</h2>
+                    
+                    <a href="">Frequently asked questions</a> <br><br>
+                    <a href="">Contact UNHCR</a> <br><br>
+                    <a href="">Media centre</a> <br><br>
+                    <a href="">Report misconduct or abuse</a> <br><br>
+                    <a href=""> Report a fraudulent site or email</a> <br><br>
+                    <a href="">Become a supplier</a> <br><br>
+                </div>
+            </div>
+            <div>
+                <div><img src="img/EN-UNHCR-White.svg" href="http://127.0.0.1:5501/" /></div>
+                <div></div>
             </div>
         </div>
     </div>
