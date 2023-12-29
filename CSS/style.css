@@ -197,22 +197,31 @@ nav .ico_nav {
   color: #060000;
 }
 
-.main-page-3 {
-  background-color: #0072bc;
+.main-page-4 {
+  background-color: #f2f1f1;
   padding: 2rem 2rem;
-  text-align: center;
-  color: #ffffff;
-  font-size: 25px;
+  text-align: left;
+  font-size: 20px;
+  height: 800px;
 }
 
-.main-page-3 > div {
+.main-page-4 > div {
+  display: inline-flex;
   width: 100%;
-  display: inline-block;
-  text-align: center;
+  align-items: center;
 }
 
-.main-page-3 > div > button {
-  border-radius: 5px;
+.main-page-4 > div > div {
+  width: 50%;
+}
+
+.main-page-4 > div > div > img {
+  height: 600px;
+  padding: 2rem 2rem;
+}
+
+.main-page-4 > div > button {
+  transform: translate(50%, 0%);
 }
 
 .main-page-5 {
@@ -344,6 +353,56 @@ nav .ico_nav {
 
 .main-page-9 > div > div > img {
   width: 450px;
+}
+
+.main-page-10 {
+  background-color: #2f333a;
+  padding: 2rem 2rem;
+}
+
+.main-page-10 > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.main-page-10 > div > div {
+  text-align: left;
+  font-size: 20px;
+}
+
+.main-page-10 > div > div > h2 {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > p {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > a {
+  color: #ffffff;
+}
+
+.main-page-10 > div > div > button {
+  color: #ffffff;
+  background-color: #2f333a;
+  border-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 45px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-page-10 > div > div > div > img {
+  width: 30px;
+  align-items: center;
+  padding: 2% 2%;
+}
+
+.main-page-10 > div > div > img {
+  width: 250px;
 }
 
 @media screen and (max-width: 768px) {
