@@ -1,6 +1,5 @@
 @charset "UTF-8";
 * {
-  box-sizing: none;
   border: 0;
   margin: 0;
 }
@@ -12,125 +11,125 @@ body input {
   border: 1px solid black;
 }
 
-nav {
-  background-color: white;
-  color: #0072bc;
-}
-nav #nav-top {
-  display: flex;
-  width: 100%;
-  border: 5px dashed pink;
-  font-size: larger;
-}
-nav #left {
+.top-banner {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  border: 5px dashed red;
-}
-nav #right {
-  display: flex;
-  border: 5px dashed green;
-}
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin-left: auto;
-  justify-content: space-around;
-  width: 100%;
-  border-style: dashed;
   align-items: center;
+  margin: 16px;
+  background-color: white;
 }
-nav li {
-  justify-content: space-around;
-}
-nav a {
+
+.links {
   display: flex;
-  margin-left: 0.5rem;
 }
-nav #nav-bottom {
-  text-align: start;
-  font-size: larger;
+
+.links-icons {
+  display: flex;
+}
+
+.logo img {
+  max-width: 300px;
+}
+
+.ico-nav {
+  padding-left: 24px;
+}
+.ico-nav img {
+  max-width: 30px;
+}
+
+.nav-left-buttons {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 8px 10px;
+  margin-left: 24px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav-left-buttons:focus {
+  outline: #000 solid 2px;
+  outline-offset: 2px;
+}
+.nav-left-buttons img {
+  padding-right: 8px;
+}
+
+.nav-left-buttons--donate {
+  border: 1px solid #fbeb00;
+  background-color: #fbeb00;
+}
+.nav-left-buttons--donate:hover {
+  border: 1px solid #fff562;
+  background-color: #fff562;
+}
+
+.nav-left-buttons--help {
+  border: 1px solid #0072bc;
   background-color: #0072bc;
   color: white;
-  border: 1px solid #2196f3;
 }
-nav #nav-bottom div {
-  margin: 1rem;
+.nav-left-buttons--help:hover {
+  border: 1px solid #23a8ff;
+  background-color: #23a8ff;
 }
-nav .logo {
-  margin-right: auto;
-  display: flex;
-}
-nav button {
-  height: 3rem;
-  width: 5rem;
-  color: #0072bc;
-  font-weight: bold;
-  margin-right: 0.5rem;
-}
-nav button:first-child {
-  margin-left: 1rem;
-}
-nav p {
-  color: black;
-}
-nav .ico_nav-img {
-  width: 30px;
-  height: 30px;
-}
-nav .ico_nav {
-  margin-left: auto;
-}
-nav #search {
-  width: 26px;
-  height: 26px;
-}
-nav .nav-left-buttons {
-  border: none;
-  border-radius: 10%;
-  width: 5rem;
-  height: 2rem;
-}
-nav #donate {
-  background-color: yellow;
-  color: black;
-}
-nav #help {
-  background-color: #0072bc;
+.nav-left-buttons--help img {
   color: white;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.icon-info {
+  max-width: 16px;
 }
-.dropdown:hover {
+.icon-info img {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  background-color: #0072bc;
+  color: white;
+  border-top: 2px solid #0072bc;
+  border-bottom: 2px solid white;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  background-color: #0072bc;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 24px;
+  transition: background-color 0.2s linear;
+}
+.dropdown-button:hover {
   background-color: white;
   color: #0072bc;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .dropdown-content {
   display: none;
+  flex-direction: column;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
+  background-color: white;
+  padding: 16px 24px;
   z-index: 1;
 }
-
-.main-page-1 {
-  background-color: #0072bc;
-  padding: 2rem 2rem;
-  text-align: center;
-  color: #ffffff;
-}
-.main-page-1 p span {
-  color: yellow;
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 16px;
 }
 
 .main-page-1 > div {
@@ -279,6 +278,7 @@ nav #help {
   border-color: #ffffff;
   background-color: #55aee9;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .main-page-6 > div {
@@ -440,6 +440,15 @@ nav #help {
 }
 
 @media screen and (max-width: 768px) {
+  #nav-top {
+    display: flex;
+    flex-direction: column;
+  }
+  #left, #right {
+    width: 100%;
+    box-sizing: border-box; /* Garante que padding e bordas não alterem a largura total */
+    padding: 10px;
+  }
   .main-page-1 {
     padding: 0rem;
     width: 100%;
@@ -478,6 +487,32 @@ nav #help {
     width: 100%;
     padding: 0rem 0rem;
   }
+  .main-page-4 {
+    height: auto;
+    align-items: center;
+  }
+  .main-page-4 > div {
+    display: grid;
+    grid-template-rows: auto auto; /* Duas linhas, uma para cada div */
+  }
+  .main-page-4 > div > div > div {
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .main-page-4 > div > div > img {
+    height: auto;
+    width: 215%;
+    display: block;
+    transform: translate(-10%, 0%);
+  }
+  .main-page-4 > div > button {
+    padding: 10px 35px;
+    font-size: 15px;
+    display: block;
+    transform: translate(0%, 0%);
+  }
   .main-page-6 {
     width: 90%;
   }
@@ -504,5 +539,55 @@ nav #help {
   }
   .main-page-6 > div > div > div > button {
     transform: translate(0%, 0%);
+  }
+  .main-page-6 > div > img {
+    width: 100%;
+    transform: translate(0, 0);
+  }
+  .main-page-7 > div > div {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+    transform: translate(-5%, 0%);
+  }
+  .main-page-7 > div > div > div > img {
+    width: 100%;
+  }
+  .main-page-7 > div > div > div > button {
+    padding: 15px 100px;
+    transform: translate(10%, 0%);
+  }
+  .main-page-8 {
+    transform: translate(-9%, 0%);
+  }
+  .main-page-8 > div {
+    padding: 2rem 2rem;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    width: 105%;
+  }
+  .main-page-8 > div > img {
+    width: 100%;
+    align-items: left;
+  }
+  .main-page-9 > div {
+    text-align: left;
+    font-size: 20px;
+    padding: 2rem 2rem;
+    transform: translate(-5%, 0%);
+    display: grid;
+    grid-template-rows: auto auto auto; /*  linhas, uma para cada div */
+  }
+  .main-page-9 > div > div {
+    width: 100%;
+    padding: 20px;
+  }
+  .main-page-9 > div > div > img {
+    width: 100%;
+  }
+  .main-page-10 > div {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

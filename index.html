@@ -8,7 +8,9 @@
     <link href="CSS/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
     <title>UNHCR</title>
 </head>
 
@@ -22,90 +24,109 @@
             </div>
             <div class="links">
                 <!--search and web icon-->
-                <a class="ico_nav">
-                    <img class="ico_nav-img" id="search" src="img/search.svg" />
-                </a>
-                <a class="ico_nav">
-                    <img class="ico_nav-img" id="web" src="img/web.svg" />
-                </a>
+                <div class="links-icons">
+                    <a class="ico-nav">
+                        <img id="search" src="img/icons/search.svg" />
+                    </a>
+                    <a class="ico-nav">
+                        <img id="web" src="img/icons/web.svg" />
+                    </a>
+                </div>
                 <!--buttons-->
-                <button id="donate" class="nav-left-buttons" onClick="redirectDonate()">
+                <button id="donate" class="nav-left-buttons nav-left-buttons--donate" onClick="redirectDonate()">
+                    <img src="img/icons/heart.svg" />
                     <p>Donate</p>
                 </button>
-                <button id="help" class="nav-left-buttons" onClick="redirectHelp()">
+                <button id="help" class="nav-left-buttons nav-left-buttons--help" onClick="redirectHelp()">
+                    <img class="icon-info" src="img/icons/info.svg" />
                     <p>Get Help</p>
                 </button>
             </div>
         </section>
-        <nav>
 
-        </nav>
-    </header>
-    <nav>
-        <div id="nav-bottom">
+    </header>        
+    <nav class="nav">
+        <div class="nav-content">
             <div class="dropdown">
-                <span>ABOUT UNHCR <i class="fa fa-caret-down"></i></span>
+                <button class="dropdown-button">About UNHCR</button>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    <p>Boas Pessoal sou SirKazzio</p>
+                    <a href="index.html">Overview</a>
+                    <a href="index.html">Where we work</a>
+                    <a href="index.html">Who we protect</a>
+                    <a href="index.html">Our partners</a>
+                    <a href="index.html">Governance and oversight</a>
                 </div>
             </div>
             <div class="dropdown">
-                <span>What we do <i class="fa fa-caret-down"></i></span>
+                <button class="dropdown-button">What we do</button>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    <p>Boas Pessoal sou SirKazzio</p>
+                    <a href="index.html">Respond to emergencies</a>
+                    <a href="index.html">Protect human rights</a>
+                    <a href="index.html">Build better futures</a>
+                    <a href="index.html">Forums and commities</a>
+                    <a href="index.html">Reports and publications</a>
                 </div>
             </div>
             <div class="dropdown">
-                <span>Emergencies <i class="fa fa-caret-down"></i></span>
+                <button class="dropdown-button">Emergencies</button>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    <p>Boas Pessoal sou SirKazzio</p>
+                    <a href="index.html">Ongoing emergencies</a>
+                    <a href="index.html">Other countries</a>
                 </div>
             </div>
             <div class="dropdown">
-                <span>News and stories</span>
-
+                <button class="dropdown-button">News and stories</button>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    <p>Boas Pessoal sou SirKazzio</p>
+                    <a href="index.html">News releases</a>
+                    <a href="index.html">Stories</a>
+                    <a href="index.html">Statements and annoucements</a>
+                    <a href="index.html">Special features</a>
+                    <a href="index.html">Media centre</a>
                 </div>
             </div>
             <div class="dropdown">
-                <span>Get involved</span>
+                <button class="dropdown-button">Get involved</button>
                 <div class="dropdown-content">
-                    <p>Hello World!</p>
-                    <p>Boas Pessoal sou SirKazzio</p>
+                    <a href="index.html">Work with us</a>
+                    <a href="index.html">Take action</a>
+                    <a href="index.html">Stay informed</a>
+                    <a href="index.html">Ways to donate</a>
+                    <a href="index.html">Shop MADE51 handicrafts</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="main-page"> 
+    <!--
+    <div class="main-page">
         <div class="main-page-1">
             <div>
                 <p><span>GLOBAL REFUGEE FORUM 2023</span></p>
-                <h2>Global Refugee Forum delivers unity and action amid global crises</h2> 
+                <h2>Global Refugee Forum delivers unity and action amid global crises</h2>
                 <button class="yellow-button">Read the story</button>
                 <button class="blue-button">Global refugee Forum</button>
             </div>
             <div>
                 <img src="img/RF1295854.webp" />
-                
+
             </div>
             <div>
                 <p class="legenda">© UNHCR/Will Swanson</p>
-            </div> 
+            </div>
         </div>
         <div class="main-page-2">
             <div>
-                <br><h1>UNHCR helps to save lives and build better futures for the millions of people forced to flee their homes.</h1>    
+                <br>
+                <h1>UNHCR helps to save lives and build better futures for the millions of people forced to flee their
+                    homes.</h1>
                 <div>
                     <div>
-                        <p>UNHCR, the UN Refugee Agency works to ensure that everybody has the right to seek asylum and find safe refuge, having fled violence, persecution or war at home.</p>
+                        <p>UNHCR, the UN Refugee Agency works to ensure that everybody has the right to seek asylum and
+                            find safe refuge, having fled violence, persecution or war at home.</p>
                     </div>
                     <div>
-                        <p>Since 1950, we have faced multiple crises on multiple continents, and provided vital protection and assistance to refugees, asylum-seekers, internally displaced and stateless people, many of whom have nobody left to turn to.</p>
+                        <p>Since 1950, we have faced multiple crises on multiple continents, and provided vital
+                            protection and assistance to refugees, asylum-seekers, internally displaced and stateless
+                            people, many of whom have nobody left to turn to.</p>
 
                         <p>We help to save lives and build better futures for millions forced from home.</p>
                     </div>
@@ -114,25 +135,25 @@
                         <br><br>
                         <button class="white-button">How can I get involved?</button>
                     </div>
-                </div>    
-  
-            </div>    
-            
-        </div>
+                </div>
+
+            </div>
+
+        </div>-->
         <div class="main-page-3">
-            
+
         </div>
         <div class="main-page-4">
             <h2>Key facts and figures</h2>
             <div>
                 <div>
-                    <img src="img/grafico1.PNG" >
+                    <img src="img/grafico1.PNG">
                 </div>
                 <div>
-                    <img src="img/grafico2.PNG" >
+                    <img src="img/grafico2.PNG">
                 </div>
             </div>
-            
+
             <div>
                 <button class="white-button">Get the latest data and statistics</button>
             </div>
@@ -144,31 +165,32 @@
             </div>
             <div><button>Services for refugees</button></div>
         </div>
-        <div class="main-page-6"> 
+        <div class="main-page-6">
             <h1>Latest from UNHCR</h1>
             <div>
                 <div>
-                    <div><img src="img/RF1326521.webp"/></div>
-                <div>
-                    <p><span>STORIES</span></p>
-                    <h2>2023 Nansen Award honours champion for refugee education</h2>
-                    <h3>13 December 2023</h3>
-                </div>
+                    <div><img src="img/RF1326521.webp" /></div>
+                    <div>
+                        <p><span>STORIES</span></p>
+                        <h2>2023 Nansen Award honours champion for refugee education</h2>
+                        <h3>13 December 2023</h3>
+                    </div>
                 </div>
                 <div>
                     <div>
                         <div>
-                            <img src="img/RF1328090.webp"/>
+                            <img src="img/RF1328090.webp" />
                         </div>
                         <div>
                             <p><span>STORIES</span></p>
-                            <h2>Global forum closes with over $2.2bn in pledges to improve lives of refugees and hosts</h2>
+                            <h2>Global forum closes with over $2.2bn in pledges to improve lives of refugees and hosts
+                            </h2>
                             <h3>13 December 2023</h3>
                         </div>
                     </div>
                     <div>
                         <div>
-                            <img src="img/RF1303507.webp"/>
+                            <img src="img/RF1303507.webp" />
                         </div>
                         <div>
                             <p><span>STORIES</span></p>
@@ -178,7 +200,7 @@
                     </div>
                     <div>
                         <div>
-                            <img src="img/RF1324729.webp"/>
+                            <img src="img/RF1324729.webp" />
                         </div>
                         <div>
                             <p><span>STORIES</span></p>
@@ -192,24 +214,31 @@
                 </div>
             </div>
         </div>
-        <div class="main-page-7"> 
+        <div class="main-page-7">
             <div>
                 <div>
 
                     <div>
                         <p><span>EMERGENCY APPEAL</span><br>
-                        <b>Winter Emergency</b><br><br>
-                        As temperatures drop, millions of families forced to flee will face another cold winter far from home. <br><br>
+                            <b>Winter Emergency</b><br><br>
+                            As temperatures drop, millions of families forced to flee will face another cold winter far
+                            from home. <br><br>
 
-                            In Ukraine, UNHCR, the UN Refugee Agency, is providing cash assistance, winter supplies and helping to reinforce homes and collective shelters against the harsh weather. <br><br>
-                            
-                            In Lebanon, Jordan, Syria, Afghanistan, as well as in Iran and Pakistan UNHCR is on the ground providing life-saving aid and winter supplies to refugees and displaced families. We are also providing support to families fleeing the Sudan crisis, who are facing similar challenges for the first time. <br><br>
-                            
-                            Your donation is needed more than ever now to protect vulnerable families.</p>
+                            In Ukraine, UNHCR, the UN Refugee Agency, is providing cash assistance, winter supplies and
+                            helping to reinforce homes and collective shelters against the harsh weather. <br><br>
+
+                            In Lebanon, Jordan, Syria, Afghanistan, as well as in Iran and Pakistan UNHCR is on the
+                            ground providing life-saving aid and winter supplies to refugees and displaced families. We
+                            are also providing support to families fleeing the Sudan crisis, who are facing similar
+                            challenges for the first time. <br><br>
+
+                            Your donation is needed more than ever now to protect vulnerable families.
+                        </p>
                     </div>
                     <div>
-                        <img src="img/RF1271672.webp"/>
-                        <p>This coming winter will again be very challenging for millions of people forced to flee their homes around the world.</p>
+                        <img src="img/RF1271672.webp" />
+                        <p>This coming winter will again be very challenging for millions of people forced to flee their
+                            homes around the world.</p>
                         <p>© UNHCR/Julian Busch</p>
                     </div>
                 </div>
@@ -218,43 +247,52 @@
                         <button class="yellow-button">Donate now</button>
                     </div>
                     <div>
-                        <p><b>US$ 930</b><br>Could support three forcibly displaced families to cover their basic needs during the harsh winter months in Syria.</p>
+                        <p><b>US$ 930</b><br>Could support three forcibly displaced families to cover their basic needs
+                            during the harsh winter months in Syria.</p>
                     </div>
                     <div>
-                        <p><b>US$ 550</b><br> Could provide cash assistance for two families in Afghanistan allowing them to buy food, fuel and warm supplies to meet their most urgent needs in the winter months.</p>
+                        <p><b>US$ 550</b><br> Could provide cash assistance for two families in Afghanistan allowing
+                            them to buy food, fuel and warm supplies to meet their most urgent needs in the winter
+                            months.</p>
                     </div>
                     <div>
-                        <p><b>US$ 50 monthly</b><br> Could support a family in Egypt with cash grants to help them meet their basic needs especially during the winter months.</p>
+                        <p><b>US$ 50 monthly</b><br> Could support a family in Egypt with cash grants to help them meet
+                            their basic needs especially during the winter months.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-page-8"> 
+        <div class="main-page-8">
             <div>
                 <img src="img/global-trends-2022-thumbnail.webp" />
             </div>
             <div>
                 <p><span>DATA AND STATISTICS</span></p>
-                <h2>UNHCR annual Global Trends report 2022 </h2> 
-                <p>UNHCR's Global Trends report presents key statistical trends and the latest official statistics on refugees, asylum-seekers, internally displaced and stateless persons. <br><br> 
+                <h2>UNHCR annual Global Trends report 2022 </h2>
+                <p>UNHCR's Global Trends report presents key statistical trends and the latest official statistics on
+                    refugees, asylum-seekers, internally displaced and stateless persons. <br><br>
 
-                    Ongoing and new conflicts have driven displacement across the world in 2022, seeing the largest ever increase between years according to UNHCR’s statistics on forced displacement. <br><br> 
-                    
-                    With over 108.4 million people forcibly displaced by the end of 2022, the international community must work together to support and show solidarity with people forced to flee.  </p>
+                    Ongoing and new conflicts have driven displacement across the world in 2022, seeing the largest ever
+                    increase between years according to UNHCR’s statistics on forced displacement. <br><br>
+
+                    With over 108.4 million people forcibly displaced by the end of 2022, the international community
+                    must work together to support and show solidarity with people forced to flee. </p>
                 <button class="blue-button">View the Global Trends report</button>
             </div>
         </div>
-        <div class="main-page-9"> 
+        <div class="main-page-9">
             <div>
                 <div>
                     <img src="img/rf224703.webp" />
                     <p><span>Who we protect</span></p>
-                    <p>Our primary purpose at UNHCR is to safeguard the rights and well-being of people who have been forced to flee and those denied a nationality.</p>
+                    <p>Our primary purpose at UNHCR is to safeguard the rights and well-being of people who have been
+                        forced to flee and those denied a nationality.</p>
                 </div>
                 <div>
                     <img src="img/cta-newsletter.webp" />
                     <p><span>Subscribe to the UNHCR newsletter</span></p>
-                    <p>Subscribe to our newsletter and become part of a global community that cares about the protection and well-being of refugees.</p>
+                    <p>Subscribe to our newsletter and become part of a global community that cares about the protection
+                        and well-being of refugees.</p>
                 </div>
                 <div>
                     <img src="img/cta-made51.webp" />
@@ -268,7 +306,7 @@
                 <div>
                     <h2>Support our work </h2>
                     <p>Please help refugees in need.</p>
-                    <button >Donate now</button>
+                    <button>Donate now</button>
                 </div>
                 <div>
                     <h2>Stay connected</h2>
@@ -280,16 +318,17 @@
                         <img src="img/youtube.svg" href="">
                         <img src="img/tiktok.svg" href="">
                         <img src="img/linked.svg" href="">
-                   </div>
+                    </div>
                 </div>
                 <div>
                     <h2>Stay informed</h2>
-                    <p>Sign up to our newsletter to learn more about people forced to flee and how you can support them. </p>
-                    <button >Subscribe</button>
+                    <p>Sign up to our newsletter to learn more about people forced to flee and how you can support them.
+                    </p>
+                    <button>Subscribe</button>
                 </div>
                 <div>
                     <h2>Contact us</h2>
-                    
+
                     <a href="">Frequently asked questions</a> <br><br>
                     <a href="">Contact UNHCR</a> <br><br>
                     <a href="">Media centre</a> <br><br>
