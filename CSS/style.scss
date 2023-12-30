@@ -1,3 +1,13 @@
+:root {
+    --blue: #0072bc;
+    --yellow: #fbeb00;
+    --black: #000000;
+    --white: #ffffff;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 768px
+    --breakpoint-lg: 992px;
+    --breakpoint-xlg: 1200px;
+}
 //limpa formatação predefinida
 * {
     border: 0;
@@ -99,6 +109,8 @@ body {
     color: white;
     border-top: 2px solid #0072bc;
     border-bottom: 2px solid white;
+    position: sticky;
+    top: 0;
 }
 
 .nav-content {
@@ -485,22 +497,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #nav-top {
-        display: flex;
-        flex-direction: column; 
-    }
-    #left, #right{
-        width: 100%;
-    box-sizing: border-box; /* Garante que padding e bordas não alterem a largura total */
-    padding: 10px;
-    }
-    
-   
+    .nav {
+        display: none;
+   }
     .main-page-1 {
         padding: 0rem;
-        width: 100%;
-        
-        
+        width: 100%;    
     }
 
     .main-page-1 > div {
@@ -617,8 +619,6 @@ body {
         transform: translate(0, 0);
     }
 
-
-    
     .main-page-7 > div > div{
         
         display:block;
