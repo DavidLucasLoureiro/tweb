@@ -1,10 +1,10 @@
 :root {
-    --blue: #0072bc;
+    --blue: #0072bb;
     --yellow: #fbeb00;
     --black: #000000;
     --white: #ffffff;
     --breakpoint-sm: 600px;
-    --breakpoint-md: 768px
+    --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xlg: 1200px;
 }
@@ -17,7 +17,7 @@
 body {
     font-family: 'DM Sans', 'Arial', sans-serif;
     input {
-        border: 1px solid black;
+        border: 1px solid var(--black);
     }
 }
 
@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 16px;
-    background-color: white;
+    background-color: var(--white);
 }
 
 .logo {
@@ -35,7 +35,7 @@ body {
 }
 
 .menu-button {
-    background-color: #ffffff;
+    background-color: var(--var(--white));
     padding-right: 16px;
     display: none;
     cursor: pointer;
@@ -86,27 +86,27 @@ body {
 }
 
 .nav-left-buttons--donate {
-    border: 1px solid #fbeb00;
-    background-color: #fbeb00;
+    border: 1px solid var(--yellow);
+    background-color: var(--yellow);
 
     &:hover {
-        border: 1px solid lighten($color: #fbeb00, $amount: 20);
-        background-color: lighten($color: #fbeb00, $amount: 20);
+        border: 1px solid lighten($color: var(--yellow), $amount: 20);
+        background-color: lighten($color: var(--yellow), $amount: 20);
     }
 }
 
 .nav-left-buttons--help {
-    border: 1px solid #0072bc;
-    background-color: #0072bc;
-    color: white;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
 
     &:hover {
-        border: 1px solid lighten($color: #0072bc, $amount: 20);
-        background-color: lighten($color: #0072bc, $amount: 20);
+        border: 1px solid lighten($color: var(--blue), $amount: 20);
+        background-color: lighten($color: var(--blue), $amount: 20);
     }
 
     img {
-        color: white;
+        color: var(--white);
     }
 }
 
@@ -115,17 +115,17 @@ body {
     max-width: 16px;
 
     img {
-        color: white;
+        color: var(--white);
     }
 }
 
 
 .nav {
     display: flex;
-    background-color: #0072bc;
-    color: white;
-    border-top: 2px solid #0072bc;
-    border-bottom: 2px solid white;
+    background-color: var(--blue);
+    color: var(--white);
+    border-top: 2px solid var(--blue);
+    border-bottom: 2px solid var(--white);
     position: sticky;
     top: 0;
     z-index: 200;
@@ -147,16 +147,16 @@ body {
 
 .dropdown-button {
     cursor: pointer;
-    background-color: #0072bc;
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
     font-size: 16px;
     font-weight: bold;
     padding: 20px 24px;
     transition: background-color 0.2s linear;
 
     &:hover {
-        background-color: white;
-        color: #0072bc;
+        background-color: var(--white);
+        color: var(--blue);
     }
 }
 
@@ -164,19 +164,19 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: var(--white);
     padding: 16px 24px;
     z-index: 1;
 
     a {
-        color: black;
+        color: var(--black);
         text-decoration: none;
         padding-bottom: 16px;
     }
 }
 
 .main-page-1{
-    background-color: #0072bc;
+    background-color: var(--blue);
     padding: 2rem 2rem;
     text-align: center;
     align-items: center;
@@ -196,11 +196,11 @@ body {
     }
     h2{
         font-size: 42px;
-        color: #ffffff;
+        color: var(--var(--white));
         width: 80%;
     }
     .legenda{
-        color: #ffffff;
+        color: var(--var(--white));
         font-size: 15px;
         transform: translate( 40%, 0%);
     }
@@ -214,7 +214,7 @@ body {
 
 .yellow-button {
     background-color: yellow;
-    color: black; 
+    color: var(--black); 
     padding: 10px 20px; 
     border-radius: 5px;
     border: none;
@@ -229,11 +229,11 @@ body {
 }
 
 .blue-button {
-    background-color: #0072bc;
-    color: white; 
+    background-color: var(--blue);
+    color: var(--white); 
     padding: 10px 20px; 
     border-radius: 5px;
-    border-color: #ffffff;
+    border-color: var(--var(--white));
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -246,17 +246,17 @@ body {
 
 .yellow-button:hover {
     background-color: #f8f675;
-    color: black;
+    color: var(--black);
 }
 
 .blue-button:hover {
     background-color: #218fd8;
-    color: white;
+    color: var(--white);
 }
 
 .main-page-2{
     
-    background-color: #ffffff;
+    background-color: var(--var(--white));
     text-align: left;
     
 }
@@ -275,18 +275,18 @@ body {
 
 
 
-.white-button{
+.var(--white)-button{
     color: #060000;
     border-radius: 5px;
     padding: 10px 85px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #ffffff;
+    background-color: var(--var(--white));
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.white-button:hover {
+.var(--white)-button:hover {
     background-color: #e6e4e4;
     color: #060000;
 }
@@ -331,7 +331,7 @@ body {
     background-color: #55aee9;
     padding: 2rem 2rem;
     text-align: center;
-    color: #ffffff;
+    color: var(--var(--white));
 
 
 }
@@ -347,9 +347,9 @@ body {
 
 .main-page-5 > div > button{
     padding: 10px 55px;
-    color: #ffffff;
+    color: var(--var(--white));
     border-radius: 5px;
-    border-color: #ffffff;
+    border-color: var(--var(--white));
     background-color: #55aee9;
     font-size: 20px;
     cursor: pointer;
@@ -361,7 +361,7 @@ body {
     text-align: center;
     font-size: 16px; 
     p span{
-        color: #0072bc;
+        color: var(--blue);
     }
    
 }
@@ -397,7 +397,7 @@ body {
 .main-page-7{
     background-color: #2f333a;
     padding: 2rem 2rem;
-    color: #ffffff;
+    color: var(--var(--white));
     p span{
         color: yellow;
     }
@@ -426,10 +426,10 @@ body {
 }
 
 .main-page-8{
-    background-color: #ffffff;
+    background-color: var(--var(--white));
     padding: 2rem 2rem;
     text-align: center;
-    color: #000000;
+    color: var(--var(--black));
         p span{
             font-weight: bold;
         }
@@ -466,7 +466,7 @@ body {
     width: 30%;
     padding: 20px;
     P span{
-        color: #0072bc;
+        color: var(--blue);
         font-weight: bold
     }
 }
@@ -492,21 +492,21 @@ body {
 }
 
 .main-page-10 > div > div > h2 {
-    color: #ffffff;
+    color: var(--var(--white));
 }
 
 .main-page-10 > div > div > p {
-    color: #ffffff;
+    color: var(--var(--white));
 } 
 
 .main-page-10 > div > div > a {
-    color: #ffffff;
+    color: var(--var(--white));
 } 
 
 .main-page-10 > div > div > button{
-    color: #ffffff;
+    color: var(--var(--white));
     background-color: #2f333a;
-    border-color: #ffffff;
+    border-color: var(--var(--white));
     border-radius: 5px;
     padding: 10px 45px;
     font-size: 20px;
@@ -527,7 +527,7 @@ body {
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: --breakpoint-md) {
     .menu-button {
         display: block;
     }
@@ -542,7 +542,7 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: var(--white);
+        background-color: var(--var(--white));
         color: var(--blue);
         display: none;
         flex-direction: column;
@@ -581,7 +581,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        background-color: var(--white);
+        background-color: var(--var(--white));
         color: var(--blue);
     }
 
