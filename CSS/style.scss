@@ -99,16 +99,14 @@ nav {
     padding: 2rem 2rem;
     text-align: center;
     align-items: center;
-    
-       
+    display: flex;
 }
 
 .main-page-1 > div{
     width: 40%;
-    display: inline-block;
     text-align: left;
     font-size: 20px;
-    transform: translate( -25%, -30%);
+    
     p span{
         color: yellow;
         font-weight: bold;
@@ -121,13 +119,15 @@ nav {
     .legenda{
         color: #ffffff;
         font-size: 15px;
-        transform: translate( 40%, 0%);
+        
     }
 }
 
 .main-page-1 > div > img{
-    width: 950px;
-    transform: translate( -10%, 30%);
+    width: 150%;
+    
+    align-items: center;
+    transform: translate( 0%, 0%);
 }
 
 
@@ -236,7 +236,6 @@ nav {
 }
 
 .main-page-4>div > div > img{
-    
     height: 600px;
     padding: 2rem 2rem;
 }
@@ -460,35 +459,30 @@ nav {
    
     .main-page-1 {
         padding: 0rem;
-        width: 100%;
-        
-        
+        display: block;
     }
 
     .main-page-1 > div {
         width: 90%; 
+        padding: 2rem 1.5rem;
         text-align: center;
         font-size: 20px;
-        transform: translate(0%, 0%);
         p span{
-            font-size: 20px;
-            transform: translate( 0%, 0%);
+            font-size: 20px;  
         }
         h2{
-            font-size: 25px;
-            
+            font-size: 25px;     
             width: 100%;
         }
         .legenda{
             
             font-size: 15px;
-            transform: translate( 0%, 0%);
         }
     }
 
     .main-page-1 > div > img {
         width: 100%; 
-        transform: translate(0, 0);
+        align-items: center;
     }
 
     .main-page-2{

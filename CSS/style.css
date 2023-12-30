@@ -99,14 +99,13 @@ nav .ico_nav {
   padding: 2rem 2rem;
   text-align: center;
   align-items: center;
+  display: flex;
 }
 
 .main-page-1 > div {
   width: 40%;
-  display: inline-block;
   text-align: left;
   font-size: 20px;
-  transform: translate(-25%, -30%);
 }
 .main-page-1 > div p span {
   color: yellow;
@@ -120,12 +119,12 @@ nav .ico_nav {
 .main-page-1 > div .legenda {
   color: #ffffff;
   font-size: 15px;
-  transform: translate(40%, 0%);
 }
 
 .main-page-1 > div > img {
-  width: 950px;
-  transform: translate(-10%, 30%);
+  width: 150%;
+  align-items: center;
+  transform: translate(0%, 0%);
 }
 
 .yellow-button {
@@ -420,17 +419,16 @@ nav .ico_nav {
   }
   .main-page-1 {
     padding: 0rem;
-    width: 100%;
+    display: block;
   }
   .main-page-1 > div {
     width: 90%;
+    padding: 2rem 1.5rem;
     text-align: center;
     font-size: 20px;
-    transform: translate(0%, 0%);
   }
   .main-page-1 > div p span {
     font-size: 20px;
-    transform: translate(0%, 0%);
   }
   .main-page-1 > div h2 {
     font-size: 25px;
@@ -438,11 +436,10 @@ nav .ico_nav {
   }
   .main-page-1 > div .legenda {
     font-size: 15px;
-    transform: translate(0%, 0%);
   }
   .main-page-1 > div > img {
     width: 100%;
-    transform: translate(0, 0);
+    align-items: center;
   }
   .main-page-2 {
     width: 90%;
