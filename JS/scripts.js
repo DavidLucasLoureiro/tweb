@@ -11,6 +11,7 @@ form.addEventListener('submit', function (event) {
 let Name = document.querySelector('#Name');
 let Amount = document.querySelector('#Amount');
 let btnDonate = document.querySelector('#btnDonate');
+let DonationShow=document.querySelector('#Donation_Show')
 let Monthly = document.querySelector('#Monthly');
 let msg = document.querySelector('#msg');
 let situacao = document.querySelector('#situacao');
@@ -94,6 +95,12 @@ function donate(m){
             }
         }
     }
+
     console.log(Message, Monthly.checked);
-    msg.textContent=Message;
+    alert("Doação\nMontante="+Amount.value+"€\n"+Message);
+
+}
+
+function redirectIndex(){
+    window.location.href="\index.html"
 }

@@ -13,49 +13,37 @@
         <div class="titulo">Doação</div>
         <form>
             <div class="row radio">
-            <div class="col-35"><label>
-                <input type="radio" name="donationType" id="OneOff" value="one-off" checked> Uma vez
-            </label></div>
-            <div class="col-65">
-            <label>
-                <input type="radio" name="donationType" id="Monthly" value="monthly"> Mensal
-            </label>
+                <div class="col-35"><label>
+                        <input type="radio" name="donationType" id="OneOff" value="one-off" checked> Uma vez
+                    </label></div>
+                <div class="col-65">
+                    <label>
+                        <input type="radio" name="donationType" id="Monthly" value="monthly"> Mensal
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-35">
-            <label for="Name">Nome</label>
-        </div>
-        <div class="col-65">
-            <input type="text" id="Name" required><br>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-35">
-            <label for="Amount">Montante</label>
-        </div>
-        <div class="col-65">
-            <input type="number" id="Amount" value="0" min="0" step="0.01" required><br>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-35">
-            <label for="Company">Empresa</label>
-        </div>
-        <div class="col-65">
-            <input type="text" id="Company"><br>
-        </div>
-        </div>
-        <div class="row buttons">
-            <input type="submit" id="btnDonate" value="Doar">
-            <input type="reset" id="btnVoltar" value="Voltar">
-        </div>
-        <div id="painel-status" class="row">
-            <span id="situacao"></span><br />
-            Doação: <span id="Donation_show"></span><br />
-            <span id="msg"></span>
-        </div>
-        </form>
+            <div class="row">
+                <div class="col-35">
+                    <label for="Name">Nome</label>
+                </div>
+                <div class="col-65">
+                    <input type="text" id="Name" required><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-35">
+                    <label for="Amount">Montante</label>
+                </div>
+                <div class="col-65">
+                    <input type="number" id="Amount" value="0" min="0" step="0.01" required><br>
+                </div>
+            </div>
+
+    <div class="row buttons">
+        <input type="submit" id="btnDonate" value="Doar">
+        <input type="button" id="btnVoltar" Value="Voltar" onClick="redirectIndex()">
+    </div>
+    </form>
     </div>
     <script type="text/javascript" src="JS/scripts.js"></script>
 </body>

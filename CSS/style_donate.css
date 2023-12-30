@@ -60,7 +60,7 @@ input:focus {
 input:focus:required:invalid {
   border: 1px solid red;
 }
-input[type=submit], input[type=reset] {
+input[type=submit], input[type=button] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -74,7 +74,7 @@ input[type=submit], input[type=reset] {
   margin: 20px 5px;
   float: right;
 }
-input[type=submit]:hover, input[type=reset]:hover, input #btnCalcularNota:hover {
+input[type=submit]:hover, input[type=button]:hover, input #btnCalcularNota:hover {
   background-color: #808080;
 }
 
@@ -153,10 +153,10 @@ label, #notaTP-painel, #uNomeLab {
   background-color: #0063a3;
 }
 
-#btnReset {
+#btnVoltar {
   background-color: yellow;
 }
-#btnReset:hover {
+#btnVoltar:hover {
   background-color: #e6e600;
 }
 
@@ -164,7 +164,7 @@ label, #notaTP-painel, #uNomeLab {
   .container {
     width: 100%;
   }
-  input[type=submit], input[type=reset] {
+  input[type=submit], input[type=button] {
     margin: 0px;
     margin-top: 10px;
     width: 100%;
