@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    transform: translate( 0%, 0%);
 }
 
 nav {
@@ -444,6 +446,17 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    #nav-top {
+        display: flex;
+        flex-direction: column; 
+    }
+    #left, #right{
+        width: 100%;
+    box-sizing: border-box; /* Garante que padding e bordas não alterem a largura total */
+    padding: 10px;
+    }
+    
+   
     .main-page-1 {
         padding: 0rem;
         width: 100%;
