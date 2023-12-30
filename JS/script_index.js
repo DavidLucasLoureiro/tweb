@@ -1,4 +1,7 @@
-let donate = document.querySelector("#donate");
-donate.addEventListner('click', function(){
-    window.location.href = "donate.html";
-})
+function redirectDonate(){
+    window.location.href = "/donate.html";
+}
+
+function toggleMenu() {
+    document.getElementById("nav").classList.toggle("nav--open");
+}

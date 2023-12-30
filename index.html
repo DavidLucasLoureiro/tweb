@@ -18,6 +18,9 @@
     <header>
         <section class="top-banner">
             <div class="logo">
+                <button class="menu-button" onClick="toggleMenu()">
+                    <img src="img/icons/menu.svg" />
+                </button>
                 <a href="index.html">
                     <img src="img/logo.svg" />
                 </a>
@@ -44,9 +47,14 @@
             </div>
         </section>
 
-    </header>        
-    <nav class="nav">
+    </header>
+    <nav class="nav" id="nav">
         <div class="nav-content">
+            <div class="nav-actions">
+                <button class="menu-button" onClick="toggleMenu()">
+                    <img src="img/icons/close.svg" />
+                </button>
+            </div>
             <div class="dropdown">
                 <button class="dropdown-button">About UNHCR</button>
                 <div class="dropdown-content">
@@ -96,7 +104,6 @@
             </div>
         </div>
     </nav>
-    <!--
     <div class="main-page">
         <div class="main-page-1">
             <div>
@@ -112,7 +119,7 @@
             <div>
                 <p class="legenda">© UNHCR/Will Swanson</p>
             </div>
-        </div>-->
+        </div>
         <div class="main-page-2">
             <div>
                 <br>
@@ -136,7 +143,9 @@
                         <button class="white-button">How can I get involved?</button>
                     </div>
                 </div>
+
             </div>
+
         </div>
         <div class="main-page-3">
 

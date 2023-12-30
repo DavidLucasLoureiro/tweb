@@ -29,6 +29,22 @@ body {
     background-color: white;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    background-color: #ffffff;
+    padding-right: 16px;
+    display: none;
+    cursor: pointer;
+
+    img {
+        width: 32px;
+    }
+}
+
 .links {
     display: flex;
 }
@@ -103,6 +119,7 @@ body {
     }
 }
 
+
 .nav {
     display: flex;
     background-color: #0072bc;
@@ -111,12 +128,17 @@ body {
     border-bottom: 2px solid white;
     position: sticky;
     top: 0;
+    z-index: 200;
 }
 
 .nav-content {
     display: flex;
     align-items: center;
     margin-left: 24px;
+}
+
+.nav-actions {
+    display: none;
 }
 
 .dropdown:hover .dropdown-content{
@@ -151,6 +173,15 @@ body {
         text-decoration: none;
         padding-bottom: 16px;
     }
+}
+
+.main-page-1{
+    background-color: #0072bc;
+    padding: 2rem 2rem;
+    text-align: center;
+    align-items: center;
+    
+       
 }
 
 .main-page-1 > div{
@@ -497,12 +528,72 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    .top-banner {
+        flex-direction: column;
+    }
+
     .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--white);
+        color: var(--blue);
         display: none;
-   }
+        flex-direction: column;
+    }
+
+    .nav--open {
+        display: flex;
+    }
+    
+    .nav-content {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 24px 24px 0px 0px;
+
+        img {
+            width: 32px;
+        }
+    }
+
+    .dropdown {
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+
+        &:first-child {
+            border-top: 1px solid lightgrey;
+        }
+    }
+
+    .dropdown-button {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        background-color: var(--white);
+        color: var(--blue);
+    }
+
+    .dropdown:hover .dropdown-content{
+        display: none;
+    }
+   
     .main-page-1 {
         padding: 0rem;
-        width: 100%;    
+        width: 100%;
+        
+        
     }
 
     .main-page-1 > div {
@@ -619,6 +710,8 @@ body {
         transform: translate(0, 0);
     }
 
+
+    
     .main-page-7 > div > div{
         
         display:block;
