@@ -29,3 +29,40 @@ function redirectInvolved(){
 function toggleMenu() {
     document.getElementById("nav").classList.toggle("nav--open");
 }
+
+function redirectRStorie(){
+    window.location.href = "https://www.unhcr.org/news/stories/global-refugee-forum-delivers-unity-and-action-amid-global-crises";
+}
+
+function redirectRefugee(){
+    window.location.href = "https://www.unhcr.org/global-refugee-forum-2023";
+}
+
+function redirectLearnAbout(){
+    window.location.href = "https://www.unhcr.org/what-we-do";
+}
+
+function redirectGetInvolved(){
+    window.location.href = "https://www.unhcr.org/get-involved";
+}
+
+function redirectGetData(){
+    window.location.href = "https://www.unhcr.org/what-we-do/reports-and-publications/unhcr-data";
+}
+
+function redirectServiceRefugees(){
+    window.location.href = "https://www.unhcr.org/services-refugees-asylum-seekers-and-stateless-people";
+}
+
+function redirectMoreStories(){
+    window.location.href = "https://www.unhcr.org/news-and-stories";
+}
+
+function redirectGlobalTrends(){
+    window.location.href = "https://www.unhcr.org/global-trends";
+}
+
+function redirectSubscribe(){
+    window.location.href = "https://www.unhcr.org/sign-and-stay-informed";
+}
+

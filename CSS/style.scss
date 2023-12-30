@@ -35,7 +35,7 @@ body {
 }
 
 .menu-button {
-    background-color: var(--var(--white));
+    background-co;
     padding-right: 16px;
     display: none;
     cursor: pointer;
@@ -191,16 +191,16 @@ body {
     font-size: 20px;
     transform: translate( -25%, -30%);
     p span{
-        color: yellow;
+        color: var(--yellow);
         font-weight: bold;
     }
     h2{
         font-size: 42px;
-        color: var(--var(--white));
+        co;
         width: 80%;
     }
     .legenda{
-        color: var(--var(--white));
+        co;
         font-size: 15px;
         transform: translate( 40%, 0%);
     }
@@ -213,7 +213,7 @@ body {
 
 
 .yellow-button {
-    background-color: yellow;
+    background-color: var(--yellow);
     color: var(--black); 
     padding: 10px 20px; 
     border-radius: 5px;
@@ -233,7 +233,7 @@ body {
     color: var(--white); 
     padding: 10px 20px; 
     border-radius: 5px;
-    border-color: var(--var(--white));
+    border-co;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -245,7 +245,7 @@ body {
 }
 
 .yellow-button:hover {
-    background-color: #f8f675;
+    background-color: var(--yellow);
     color: var(--black);
 }
 
@@ -256,7 +256,7 @@ body {
 
 .main-page-2{
     
-    background-color: var(--var(--white));
+    background-co;
     text-align: left;
     
 }
@@ -275,18 +275,18 @@ body {
 
 
 
-.var(--white)-button{
+.white-button{
     color: #060000;
     border-radius: 5px;
     padding: 10px 85px;
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--var(--white));
+    background-color: var(--white);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.var(--white)-button:hover {
+.white-button:hover {
     background-color: #e6e4e4;
     color: #060000;
 }
@@ -331,7 +331,7 @@ body {
     background-color: #55aee9;
     padding: 2rem 2rem;
     text-align: center;
-    color: var(--var(--white));
+    color: var(--white);
 
 
 }
@@ -347,9 +347,9 @@ body {
 
 .main-page-5 > div > button{
     padding: 10px 55px;
-    color: var(--var(--white));
+    color: var(--white);
     border-radius: 5px;
-    border-color: var(--var(--white));
+    border-co;
     background-color: #55aee9;
     font-size: 20px;
     cursor: pointer;
@@ -397,9 +397,9 @@ body {
 .main-page-7{
     background-color: #2f333a;
     padding: 2rem 2rem;
-    color: var(--var(--white));
+    color: var(--white);
     p span{
-        color: yellow;
+        color: var(--yellow);
     }
 }
 
@@ -426,10 +426,10 @@ body {
 }
 
 .main-page-8{
-    background-color: var(--var(--white));
+    background-co;
     padding: 2rem 2rem;
     text-align: center;
-    color: var(--var(--black));
+    color: var(--black);
         p span{
             font-weight: bold;
         }
@@ -492,21 +492,21 @@ body {
 }
 
 .main-page-10 > div > div > h2 {
-    color: var(--var(--white));
+    co;
 }
 
 .main-page-10 > div > div > p {
-    color: var(--var(--white));
+    co;
 } 
 
 .main-page-10 > div > div > a {
-    color: var(--var(--white));
+    co;
 } 
 
 .main-page-10 > div > div > button{
-    color: var(--var(--white));
+    co;
     background-color: #2f333a;
-    border-color: var(--var(--white));
+    border-co;
     border-radius: 5px;
     padding: 10px 45px;
     font-size: 20px;
@@ -542,7 +542,7 @@ body {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: var(--var(--white));
+        background-co;
         color: var(--blue);
         display: none;
         flex-direction: column;
@@ -581,7 +581,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        background-color: var(--var(--white));
+        background-co;
         color: var(--blue);
     }
 
@@ -592,8 +592,7 @@ body {
     .main-page-1 {
         padding: 0rem;
         width: 100%;
-        
-        
+          
     }
 
     .main-page-1 > div {
